@@ -7,7 +7,7 @@
 
 int main()
 {
-	int c; 
+	char c; 
 
 	while ((c = getchar()) != EOF)		//Can't seem to identify EOF
 	{
