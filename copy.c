@@ -9,11 +9,10 @@ int main()
 {
 	char c; 
 
-	while ((c = getchar()) != EOF)		//Can't seem to identify EOF
+	while ((c = getchar()) != EOF)		//Can't seem to identify EOF- *update:fixed it by the way
 	{
-		putchar(c);			//I need to confirm EOF value
-		//printf("%d\n", c);		
-		
+		putchar(c);			//I need to confirm EOF value- *update:redefined EOF
+		//printf("%d\n", c);
 	}
 	printf("\n");
 }

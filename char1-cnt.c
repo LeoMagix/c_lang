@@ -10,7 +10,7 @@ int main()
 {
 	int nc;
 	
-	/*loops-while or for- work as intended*/   
+	/*loops, while or for, work as intended*/   
 	for (nc = 0; getchar() != EOF; ++nc)
 	{
 		;	//for-loop block must have a statement, hence the NULL statement
