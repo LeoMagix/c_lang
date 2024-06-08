@@ -9,15 +9,18 @@
 /*Can't write the program for now, don't understand the instruction.*/
 int main()
 {
-	int blnk, c;
+	int i, c;
 
 	while ((c = getchar()) != EOF)
 	{
+	/*
+	 * It works but still is incomplete, It can't handle tabs < blanks > tabs
+	 *  Problem: how do you represent more than one blanks in C?*/
 		if (c == ' ' || c == '\t')
 		{
-			printf("");
+			c = ' ';
 		}
 		putchar(c);
 	}
-	//putchar(c);
+	printf("\n");
 }

@@ -13,21 +13,27 @@ int main()
 
 	while((c = getchar()) != EOF)
 	{
+	/*
+	 * Can't find a way to assign c a '\' xter with a letter in a single quote
+	 *  Problem:Lack complete knowledge on how to manipulate the character data type in C*/ 
+	
 		if (c == '\n')
 		{
-			printf("\\n");
+			c = '\\n';
 		}
 		if (c == '\\')
 		{
-			printf("\\");
+			c = '\\';
 		}
 		if (c == '\t')
 		{
-			printf("\\t");
+			c = '  ';
+			//printf("\\t");
 		}
 		if (c == ' ')
 		{
-			printf("\\b");
+			c = '';
+			//printf("b");
 		}
 		putchar(c);
 	}
