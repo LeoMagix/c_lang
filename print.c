@@ -25,6 +25,6 @@ int main()
 
 	}
 	printf("\n");
-	//printf("char:%d blank:%d\n", nc, blnk);
+	printf("char:%d blank:%d\n", nc, blnk);
 	//printf("Words:%d\n", wc);
 }

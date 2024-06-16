@@ -11,9 +11,9 @@
 int main()
 {
 	int state = OUT;
-	int c, nl, wc, nc;
+	int c, nl, wc, nc, blnk;
 
-	nl = wc = nc = 0;
+	nl = wc = nc = blnk = 0;
 
 	while ((c = getchar()) != EOF)  
 	{
@@ -25,12 +25,16 @@ int main()
 		if (c == ' ' || c == '\t' || c == '\n')
 		{
 			state = OUT;
+			++blnk;
 		}
+	/*The vital part of the program-informs the computer that we are already in a whitespace
+	 *  The Trick- it's the not whole word it counts, it hits the first instance of a letter,
+	 *  waits for a whitespace to indicate the occurence of another letter*/
 		else if (state == OUT)
 		{
 			state = IN;
 			++wc;
 		}
 	}
-	printf("Newlines:%d Word(s):%d Characters:%d\n", nl, wc, nc);
+	printf("Newlines:%d Word(s):%d Characters:%d\n Blank Space:%d\n", nl, wc, nc, blnk);
 }
