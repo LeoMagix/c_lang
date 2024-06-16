@@ -9,13 +9,24 @@
 /*Can't write the program for now, don't understand the instruction.*/
 int main()
 {
-	int blnk, c;
+	int blnk, i, c;
+
+	blnk = 0;
 
 	while ((c = getchar()) != EOF)
 	{
-		if (c == ' ' || c == '\t')
+		if (c =  ' ')
 		{
-			printf("");
+			++blnk;
+
+		}
+		
+		if (blnk > 12)
+		{
+			for (i = blnk; i <= 1; i--)
+			{
+				c = '\b';
+			}
 		}
 		putchar(c);
 	}
