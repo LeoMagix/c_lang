@@ -22,4 +22,4 @@ int main()
 	 * 		reach end of file(can't confirm its value for now).
 	 */
 	printf("Number of characters:%d\n", nc);	//By-passed the issue with an alternate value for EOF
-}
+}							//*update:ctrl-D on keyboard to enter EOF.	
