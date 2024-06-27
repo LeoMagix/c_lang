@@ -2,8 +2,7 @@
 
 /**
  * I don't have a program description right now
- * *Ok it's a program that replaces every third element of an arry with
- * 	number 10
+ * *Ok it's a program that replaces every third element of an array with the number 10
  */
 
 int main()
