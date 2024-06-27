@@ -18,6 +18,6 @@ int main()
 	{
 		sum += num;
 		scanf("%d", &num);	//little problem:Can't prevent the program asking user for one more input
-	}				//  after the negative number is enterd by the user.**Fixed it.
+	}				//  after the negative number is entered by the user.**Fixed it.
 	printf("The total sum is %d\n", sum);
 }
