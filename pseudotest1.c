@@ -19,5 +19,7 @@ int main()
 		sum += num;
 		scanf("%d", &num);	//little problem:Can't prevent the program asking user for one more input
 	}				//  after the negative number is entered by the user.**Fixed it.
-	printf("The total sum is %d\n", sum);
+	printf("The total sum is %d\n", sum); 
+	/*C executes our code top to bottom, something i didn't take cognisance of when writing the program, 
+	 * this was the cause of our bug*/
 }
