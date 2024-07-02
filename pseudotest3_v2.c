@@ -4,9 +4,10 @@
  * testing, testing, texting
  */
 
-/* I am trying to create a dynamic program where the array size is determined
- * by data inputed by the user, however, at the moment I cannot without initialising 
- * the array with a value or size. Further array knowledge is definitely required.
+/* I am trying to create a dynamic program where array size is determined
+ * by text from user input, however, at the moment I cannot without prior initialisation 
+ * of the array with a value or size. 
+ * Further array knowledge definitely required.
  */
 
 int main()
