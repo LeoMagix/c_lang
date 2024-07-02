@@ -17,7 +17,7 @@ int main()
 			//	*update:more of a stlye requirement than syntax demand
 	}
 	/*computed value of nc is not available to printf
-	 * if printf is used outside of loop.
+	 * *update:fixed it--if printf is used outside of loop.
 	 * 	*update--we are in an infinite loop, we never
 	 * 		reach end of file(can't confirm its value for now).
 	 */
