@@ -4,14 +4,12 @@
  * count the number of tabs, blanks, newlines
  */
 
-#define EOF	'.'	//Redefining end of file
-
 int main()
 {
 	int c;
 	int tab, blnk, nline;
 
-	tab = blnk = nline = 0;
+	tab = blnk = 0;
 
 	while ((c = getchar()) != EOF)
 	{
