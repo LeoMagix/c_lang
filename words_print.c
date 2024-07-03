@@ -5,7 +5,7 @@
  *  each on a newline
  */
 
-#define EOF	'.'	//Redefined end-of-file
+//#define EOF	'.'	//Redefined end-of-file
 
 int main()
 {
