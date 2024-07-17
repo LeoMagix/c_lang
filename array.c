@@ -4,7 +4,7 @@
  * A foray into array
  */
 
-#define EOF	'.'	//Redefined end of file
+//#define EOF	'.'	//Redefined end of file
 
 int main()
 {
@@ -25,7 +25,7 @@ int main()
 		 * What i don't fully grasp is how do these character constants really work*/
 		if ( c >= '0' && c <= '9')
 		{
-			++ndigit[c - '0'];	//index computation 
+			++ndigit[c - '0'];	//index arithmetic 
 			//printf("here\n");
 		}
 		else if (c == ' ' || c == '\n' || c == '\t')
