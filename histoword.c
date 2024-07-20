@@ -1,47 +1,68 @@
 #include <stdio.h>
 
 /**
- * This programs presents a histogram of the length of
- * 	words entered at the command line.
+ * This programs represents the length of words entered at the command line
+ *  in a horizontal histogram format.
+ *   *Limit: one(1) - twelve(12) letters.
  */
 
-#define EOF	'.'	//Redefined end-of-file
-#define	WORD_LEN	10
+#define	NUM	12
+
 int main()
 {
-	int i, c, nletter;
-	int nwords[WORD_LEN];
+	int i, j, k, c, x, ws, nc, nletters;
+	int lwords[NUM];
 
-	for (i = 0; i < WORD_LEN; ++i)
+	i = j = k = ws = nc = nletters = 0;
+
+	/*Initialize the array*/
+	for (i = 0; i < NUM; ++i)
 	{
-		nwords[i] = 0;
-		printf("%d %d\n", i, nwords[i]);
+		lwords[i] = 0;
+		//printf("%d %d\n", i, lwords[i]);
 	}
 
 	while ((c = getchar()) != EOF)		
 	{
-		//check if character is an alphabet
-		if (c != ' ' && c != '\t' && c != '\n')
+		/*Part of the program that handles whitespace*/
+		if (c == ' ' || c == '\t' || c == '\n')
 		{
-			for (nletter = 0; nletter < WORD_LEN; ++nletter)\
-			{
-				++nletter;
-			}
-			printf("%d\n", nletter);
-			++nwords[nletter];
+			++ws;
+			/*printf("Nos:%d, ", no);*/	//This line checks if I got the last value for nletters
+			++lwords[nletters];
+			nletters = 0;
 		}
-	
-		//check if character is a whitespace
-		else if (c == ' ' || c == '\t' || c == '\n')
+		/*Handle aspects of the character that is not a whitespace character*/
+		else if ((c >= 'a' && c <= 'z') || (c >= 'A' && c <= 'Z'))
 		{
-			nletter = 0;
+			++nletters;
 		}
-		
-		else
-		{
-			;
-		}
-		//continue to count character if != whitespace
+		++nc;
+		//printf("No:%d, Whyte:%d\n", no, ws);
+	}
+	printf("No:%d, Whyte:%d Characters:%d\n", nletters, ws, nc);
+
+	/*Display the information about the lengt of words computed*/
+	for (x = 0; x < NUM; ++x)
+	{
+		printf("Number of words with %d letters = %d\n", x, lwords[x]);
 	}
 
+	/* This part of our code handles the printing of the Histogram*/
+	while (j < NUM)
+	{
+		for (k = 1; k <= lwords[j]; ++k)
+		{
+			if (k == 0)
+			{
+				printf("|");
+			}
+			else
+			{
+				printf("=");
+			}
+		}
+		printf("\n");
+		++j;
+	}
 }
