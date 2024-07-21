@@ -2,11 +2,15 @@
 
 /**
  * How to write functions in C:
- * 	Simple program that gives the result
- * 	of an integer x, raised to a positive power y.
+ *  >Function definition !not Function declaration
+ *  >The scope of variables used;local or global
+*/
+
+/* To practice functions, we'll create a basic power function 
+ * that gives the result of an integer x raised to a positive power y.
  */
 
-/*function declaration*/
+/* Function declaration */
 int power(int x, int y);		//function prototype
 
 int main()
@@ -20,13 +24,14 @@ int main()
 	return 0;
 }
 
-/*The power function itself: function definition*/
-int power(int base, int n)	//return-type fn_name(parameters...)
+/* Function definition: The power function itself
+ * return-type fn_name(parameters,...) */
+int power(int base, int n)
 {								
-	//base multiplies itself nth-power number of times
+	/* Base multiplies itself nth-power number of times */
 	int p;
 
-	for (p = 1; n > 0; --n)		//base multi[plies itself ith-power number of times
+	for (p = 1; n > 0; --n)
 	{
 		p = p * base;
 	}
