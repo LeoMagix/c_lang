@@ -3,7 +3,7 @@
 /**
  * I will give you a description if you work--
  * update*: the user inputs a number until a negative number is entered 
- *   then gets the sums them 
+ *   then it outputs the sum. 
  */
 
 int main()
