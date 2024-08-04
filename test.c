@@ -1,6 +1,14 @@
 #include <stdio.h>
 
 /**
+ * The test.c file is basically just as the name connotes a test source file, what I
+ * code in this program are not so random C langauge syntax test. It's my file to test the
+ * correctness of certain C syntax, also to test certain logic if they do agree with the tenets of the
+ * C language.
+ * This aids in my understanding of what is possible or can be done with C, that is its grammatical structure.
+ */
+
+/**
  * Just a simple test file
  */
 
@@ -27,15 +35,16 @@ int main()
 		printf("Test array[%d]==%d\n", k, arrtest[k]);
 		++k;
 	}
-	/*
+	
 	int c, m;
 	m = 0;
 	c = getchar();
 	if (c >= '0' && c <= '9')
 	{
-		m = c + '1';
-		printf("%d", m);
-	}*/
+		m = c - '1';
+		printf("%d\n", m);
+		printf("%d\n", c > '1');
+	}
 	//putchar(c);
 
 	/*int arr[5];
