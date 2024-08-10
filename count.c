@@ -6,13 +6,25 @@
 
 int main()
 {
-	int count;
+	int count = 0;
+	int cnt = 0;
+	int x = ++count;
+	int y = cnt++;
 
-	count = 0;
+	printf("X:%d Y:%d\n", x, y);
+
 	while (count <= 28)
 	{
-		printf("%d\t", count);
-		count++;
-		printf("%d\n", count);
+		++count;
+		printf("Prefix:%d ", count);
+		//++count;
 	}
+	printf("\n");
+
+	while (cnt <= 28)
+	{
+		//cnt++;
+		printf("Postfix:%d ", cnt);
+		cnt++;
+	} printf("\n");		//legal syntax in C
 }
