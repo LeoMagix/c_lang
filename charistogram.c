@@ -15,7 +15,7 @@ int main()
 
 	i = npc = letter = nombre = wspace = 0;
 
-	/* int chargram[4] = {letter, wspace, nombre, npc}; */	//This is didin't work as envisioned
+	/* int chargram[4] = {letter, wspace, nombre, npc}; */	//This didn't work as envisioned
 
 	while ((c = getchar()) != EOF)
 	{

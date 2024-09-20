@@ -4,22 +4,19 @@
  * Anoda file to use catch cruz
  */
 
-#define EOF	'~'
-
 int main(void)
 {
 	int c;
 
 	c = 35;
 
-	printf("%c%c\n", c, c);
+	printf("%d is %c\n", c, c);		//Employing the use of format specifiers to explore character constant
 
-	c = getchar();
+	c = getchar();		//Check to see if you can reassign a variable with a value having a different data type
 	putchar(c);
 	printf("\n");
 
-	char xter;		//just wanted to see how declaring a variable in the mioddle of your program
-				// behaves, not my convention
+	char xter;		//Test to see how declaring a variable in the middle of your program behaves, not my convention
 	xter = getchar();
 	while (xter != EOF)
 	{

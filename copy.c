@@ -3,7 +3,7 @@
  * Program to copy input to output
  */
 
-#define EOF	'.'	//Redefined end of file to be '.'
+//#define EOF	'.'	//Redefined end of file to be '.'
 
 int main()
 {

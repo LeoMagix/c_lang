@@ -21,10 +21,13 @@ int main()
 
 	while ((c = getchar()) != EOF)
 	{
-		/*Way to specify range
-		 * What i don't fully grasp is how do these character constants really work*/
 		if ( c >= '0' && c <= '9')
 		{
+		/*Way to specify range
+		 * What I don't fully grasp is how do these character constants really work
+		 * *update|23|08|24:Ask ASCII, numeric values represent different characters
+		 *  stored contigiously in the machine. Therefore, arithmetic operations such as these
+		 *  with character constants are possible as long as it is chronological*/
 			++ndigit[c - '0'];	//index arithmetic 
 			//printf("here\n");
 		}
@@ -37,7 +40,7 @@ int main()
 			++nother;
 		}
 	}
-
+	/* This part of the program handles the printing of the results */
 	printf("digits=");
 	for (i = 0; i < 10; ++i)
 	{

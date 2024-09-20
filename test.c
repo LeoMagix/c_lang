@@ -14,7 +14,7 @@
 
 int main()
 {
-	int i = 5;
+	/*int i = 5;
 	int j = 5/2;
 	int arrtest[5];
 	int k, l;
@@ -34,9 +34,9 @@ int main()
 		arrtest[k] = l + k;
 		printf("Test array[%d]==%d\n", k, arrtest[k]);
 		++k;
-	}
+	}*/
 	
-	int c, m;
+	/*int c, m;
 	m = 0;
 	c = getchar();
 	if (c >= '0' && c <= '9')
@@ -44,7 +44,7 @@ int main()
 		m = c - '1';
 		printf("%d\n", m);
 		printf("%d\n", c > '1');
-	}
+	}*/
 	//putchar(c);
 
 	/*int arr[5];
@@ -54,6 +54,45 @@ int main()
 		printf("%d, ", arr[i - 1]);
 	}*/
 
-	int test[2] = {k, l};
-	printf("K:%d\n", test[1]);
+	/*int test[2] = {k, l};
+	printf("K:%d\n", test[1]);*/
+	
+	/*c = '\0';
+	printf("%c", c);*/
+
+	/*while ((c = getchar()) != EOF)
+	{
+		if (c  == 'i') 
+		{
+			printf("23,");
+		}
+		*else
+		{
+			putchar(c);
+		}*
+	}*/ printf("\n");
+
+	int t[100];
+	int c;
+	int m, i = 0;
+	while ((c = getchar()) != EOF && m != 100)
+	{
+		t[m] = c;
+		++m;
+	}
+	t[m] = '\0';
+	while (t[i] != '\0')
+	{
+		if (t[i] != ' ' || t[i] != '\t')
+		{
+			printf("1st:%d[%c], ", i, t[i]);
+			++i;
+		}
+		
+		if ((t[i] == ' ' && t[++i] != ' ') || (t[i] == '\t' && t[++i] != '\t'))
+		{
+			printf("2nd:%d[%c], ", i, t[i]);
+			++i;
+		}
+	} printf("\n");
 }

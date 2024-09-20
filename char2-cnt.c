@@ -13,15 +13,16 @@ int main()
 
 	while ((c = getchar()) != EOF)
 	{
-		if (c == ' ')
+		/* First forays into conditional statements */
+		if (c == ' ')	//Check if the current character is a blank
 		{
 			++blnk;
 		}
-		if (c == '\t')
+		if (c == '\t')	//Checks if the current character is a tab
 		{
 			++tab;
 		}
-		if (c == '\n')
+		if (c == '\n')	//Checks if the current character is a newline
 		{
 			nline = 1;
 			++nline;

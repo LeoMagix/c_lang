@@ -3,6 +3,8 @@
 /**
  * Its just a program I can't really
  *  tell you what it does
+ *  *update|24|08|24:Okay I know what it does, just was lazy on the day to write a program description.
+ *
  */
 
 int main(void)
