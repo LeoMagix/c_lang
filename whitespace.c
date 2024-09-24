@@ -1,8 +1,8 @@
 #include <stdio.h>
 
 /**
- * Program that prints whitespace characters such as tabs,
- *	backspace, newlines to the terminal
+ * Program that makes whitespace characters such as tabs, backspace, blanks, newlines, 
+ * backslash visible in the terminal
  */
 
 //#define EOF	'.'	//Redefined end of file
@@ -20,7 +20,7 @@ int main()
 	
 		if (c == '\t')
 		{
-			c = '\0';
+			c = '\0';	//Use of the NUL character to prevent c from storing a garbage value
 			printf("\\t");
 		}
 		if (c == '\n')
@@ -33,16 +33,16 @@ int main()
 			c = '\0';
 			printf("\\");
 		}
-		if (c == '\b')
+		if (c == ' ')
 		{
-			c == '\0';
-			printf("\b");
+			c = '\0';
+			printf("\\b");
 		}
 		else
 		{
 			putchar(c);
 		}
-		//c = getchar(); weired results with this include in the program
+		//c = getchar(); weired results with this included in the program
 	}
 	printf("\n");
 }
